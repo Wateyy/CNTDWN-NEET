@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+/* Reset default link colors */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Make text non-selectable */
+body {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Allow text selection for specific elements */
+.selectable {
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
+/* Remove default body margin and set height to 100% */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Ensure the root div takes full height */
+#__next {
+  height: 100%;
+}
+
