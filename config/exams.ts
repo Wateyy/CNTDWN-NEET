@@ -1,7 +1,11 @@
 export const exams = {
-  neetug: {
-    name: 'NEET UG',
-    date: new Date('2026-05-01T08:00:00')
+  jeeadv: {
+    name: 'ADVANCE',
+    date: new Date('2026-06-01T08:00:00')
+  },
+  jeemain: {
+    name: 'MAIN',
+    date: new Date('2026-02-01T09:00:00')
   }
 }
 
