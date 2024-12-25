@@ -1,6 +1,6 @@
 export const exams = {
   neetug: {
-    name: 'ADVANCE',
+    name: 'NEET UG',
     date: new Date('2026-05-01T08:00:00')
   }
 }
