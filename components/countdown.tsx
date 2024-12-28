@@ -30,8 +30,16 @@ export function Countdown({ targetDate, examName }: CountdownProps) {
 
   return (
     <div className="h-full bg-black text-white flex flex-col items-center justify-center p-2 sm:p-4 text-center relative">
-      <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2 sm:mb-4 tracking-wider break-words">
-        {timeLeft.days}:{timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}:{timeLeft.milliseconds}
+      <div className="flex justify-center items-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2 sm:mb-4 tracking-wider tabular-nums">
+        <div className="w-[3ch] text-right">{timeLeft.days}</div>
+        <div className="mx-2">:</div>
+        <div className="w-[2ch] text-right">{timeLeft.hours}</div>
+        <div className="mx-2">:</div>
+        <div className="w-[2ch] text-right">{timeLeft.minutes}</div>
+        <div className="mx-2">:</div>
+        <div className="w-[2ch] text-right">{timeLeft.seconds}</div>
+        <div className="mx-2">:</div>
+        <div className="w-[3ch] text-right">{timeLeft.milliseconds}</div>
       </div>
       <div className="text-xs sm:text-sm md:text-base mb-4 sm:mb-8 tracking-wide">
         (DAYS-HOURS-MINUTES-SECONDS-MILLISECONDS)
@@ -49,4 +57,3 @@ export function Countdown({ targetDate, examName }: CountdownProps) {
     </div>
   )
 }
-
